@@ -1,0 +1,2126 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>69/2/3</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jan 07 10:20:27 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>10533 seconds (10533122 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.viewPostEventsByFilter()'><b>viewPostEventsByFilter</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-541840685" onClick='toggleBox("Output-541840685", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-541840685" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-541840685">
+viewPostEventsByFilter script exection starts at Tue Jan 07 11:57:56 IST 2025<br/>
+viewPostEventsByFilter script is failed<br/>
+Failed Screenshot has been taken<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Failed expected [true] but found [false]
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.postedEventsClick(TC__012_QuickAccessMenuFeature.java:775)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.viewPostedEvents(TC__012_QuickAccessMenuFeature.java:783)
+	at tests.TC__012_QuickAccessMenu.viewPostEventsByFilter(TC__012_QuickAccessMenu.java:194)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace541840685", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace541840685'><pre>java.lang.AssertionError: Failed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.postedEventsClick(TC__012_QuickAccessMenuFeature.java:775)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.viewPostedEvents(TC__012_QuickAccessMenuFeature.java:783)
+	at tests.TC__012_QuickAccessMenu.viewPostEventsByFilter(TC__012_QuickAccessMenu.java:194)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.isMapplsPinCreated()'><b>isMapplsPinCreated</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-1003375478" onClick='toggleBox("Output-1003375478", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1003375478" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1003375478">
+isMapplsPinCreated script exection starts at Tue Jan 07 12:51:00 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 2<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+Clicked on the close icon.<br/>
+click search box for generated pin verification<br/>
+entered pin on the search input field for pin verification : jibeax<br/>
+suggestions list found <br/>
+isMapplsPinCreated script is failed<br/>
+Failed Screenshot has been taken<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: expected [Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)] but found [Kali Mandir Road Number 1, Upper Burdwan Compound, Lalpur, Ranchi, Jharkhand, 834001]
+	at com.mappls.map.features.TC__026_MapplsPinHomeFeature.placeOnMap(TC__026_MapplsPinHomeFeature.java:854)
+	at com.mappls.map.features.TC__026_MapplsPinHomeFeature.createMapplsPinWLAndVerification(TC__026_MapplsPinHomeFeature.java:288)
+	at tests.TC__026_MapplsPinHome.isMapplsPinCreated(TC__026_MapplsPinHome.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1003375478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1003375478'><pre>java.lang.AssertionError: expected [Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)] but found [Kali Mandir Road Number 1, Upper Burdwan Compound, Lalpur, Ranchi, Jharkhand, 834001]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.mappls.map.features.TC__026_MapplsPinHomeFeature.placeOnMap(TC__026_MapplsPinHomeFeature.java:854)
+	at com.mappls.map.features.TC__026_MapplsPinHomeFeature.createMapplsPinWLAndVerification(TC__026_MapplsPinHomeFeature.java:288)
+	at tests.TC__026_MapplsPinHome.isMapplsPinCreated(TC__026_MapplsPinHome.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>43</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.homePageUI()'><b>homePageUI</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-492493402" onClick='toggleBox("Output-492493402", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-492493402" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-492493402">
+homePageUI script exection starts at Tue Jan 07 12:47:33 IST 2025<br/>
+Mappls pin clickable<br/>
+'Search here' is present<br/>
+Show Mappls Pin is available<br/>
+Move map to adjust is available<br/>
+'Create Mappls Pin' is available<br/>
+current location is available<br/>
+homePageUI script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.isSearchBtnWorking()'><b>isSearchBtnWorking</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-126012672" onClick='toggleBox("Output-126012672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-126012672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-126012672">
+isSearchBtnWorking script exection starts at Tue Jan 07 12:48:14 IST 2025<br/>
+Mappls pin clickable<br/>
+Choose On Map option available<br/>
+show mappls pin available<br/>
+create mappls pin button available<br/>
+isSearchBtnWorking script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>93</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.settingsChangePsw()'><b>settingsChangePsw</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-1629805986" onClick='toggleBox("Output-1629805986", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1629805986" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1629805986">
+settingsChangePsw script exection starts at Tue Jan 07 10:31:17 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9822980979<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+user profile is present <br/>
+Clicked 'Hamburger Icon'<br/>
+clicked 'settings' on hamburger menu<br/>
+Clicked 'account'<br/>
+clicked 'change password' on hamburger menu<br/>
+change password input field is present <br/>
+Entered old password: Mvn@1234<br/>
+Entered new password: i6$)kOdB<br/>
+Re-entered password for confirmation: i6$)kOdB<br/>
+clicked 'continue button'<br/>
+login popup window is present <br/>
+'We have updated some features which requires you to login again.' is displayed<br/>
+clicked login button<br/>
+Setting header is present <br/>
+Home Screen is present <br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9822980979<br/>
+enter password name : i6$)kOdB<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+settingsChangePsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>458</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.workOption()'><b>workOption</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-1416807034" onClick='toggleBox("Output-1416807034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1416807034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1416807034">
+workOption script exection starts at Tue Jan 07 11:17:33 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+Entered Location in 'search input' <br/>
+work address added<br/>
+workOption script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>192</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.settingWithLoginSkipBTN()'><b>settingWithLoginSkipBTN</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-1550187113" onClick='toggleBox("Output-1550187113", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1550187113" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1550187113">
+settingWithLoginSkipBTN script exection starts at Tue Jan 07 10:52:50 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+clicked 'settings' on hamburger menu<br/>
+Clicked 'account'<br/>
+clicked 'change password' on hamburger menu<br/>
+change password interface display<br/>
+clicked 'skip button' on hamburger menu<br/>
+skip button clicked successfully<br/>
+settingWithLoginSkipBTN script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>196</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithValidNameInvalidPsw()'><b>userLoginWithValidNameInvalidPsw</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-455404074" onClick='toggleBox("Output-455404074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-455404074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-455404074">
+userLoginWithValidNameInvalidPsw script exection starts at Tue Jan 07 10:24:11 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Invalid password, please re-enter and try again<br/>
+Error. Retry?<br/>
+userLoginWithValidNameInvalidPsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.createMapplsPinPageBackButton()'><b>createMapplsPinPageBackButton</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-1825878234" onClick='toggleBox("Output-1825878234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1825878234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1825878234">
+createMapplsPinPageBackButton script exection starts at Tue Jan 07 12:57:43 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+'Search here' page redirected successfully from create mappls pin page<br/>
+createMapplsPinPageBackButton script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__002_Login.guestUser()'><b>guestUser</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-306889029" onClick='toggleBox("Output-306889029", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-306889029" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-306889029">
+guestUser script exection starts at Tue Jan 07 10:22:46 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Clicked 'Skip Button'<br/>
+Login skip button working<br/>
+Home Page display<br/>
+guestUser script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.setHomeWithOutLogin()'><b>setHomeWithOutLogin</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-765553969" onClick='toggleBox("Output-765553969", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-765553969" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-765553969">
+setHomeWithOutLogin script exection starts at Tue Jan 07 11:58:16 IST 2025<br/>
+'post an Issue' login pop up window visible<br/>
+cancel login clicked<br/>
+setHomeWithOutLogin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>505</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__013_MapDisplay.mapDisplayUI()'><b>mapDisplayUI</b><br>Test class: tests.TC__013_MapDisplay<br/>
+<a href="#Output-2024037045" onClick='toggleBox("Output-2024037045", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2024037045" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2024037045">
+mapDisplayUI script exection starts at Tue Jan 07 12:58:18 IST 2025<br/>
+360 is visible<br/>
+search bar is visible<br/>
+map layer is visible<br/>
+camera option is visible<br/>
+pin is visible<br/>
+location is visible<br/>
+bottom sheet for quick access menu is visible<br/>
+mapDisplayUI script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>tests.TC__013_MapDisplay@3e78b6a5</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.isMapplsPinBtnClickable()'><b>isMapplsPinBtnClickable</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-2041754663" onClick='toggleBox("Output-2041754663", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2041754663" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2041754663">
+isMapplsPinBtnClickable script exection starts at Tue Jan 07 12:47:16 IST 2025<br/>
+Mappls pin clickable<br/>
+Show Mappls Pin is available<br/>
+isMapplsPinBtnClickable script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registrationWithExistingMobile()'><b>registrationWithExistingMobile</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-498283813" onClick='toggleBox("Output-498283813", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-498283813" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-498283813">
+registrationWithExistingMobile script exection starts at Tue Jan 07 12:45:50 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi@mapmyindia.com<br/>
+proceed with new existing email id <br/>
+Enter password to Login text is display <br/>
+registrationWithExistingMobile script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithValidUserIdInvalidPsw()'><b>userLoginWithValidUserIdInvalidPsw</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1902831987" onClick='toggleBox("Output-1902831987", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1902831987" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1902831987">
+userLoginWithValidUserIdInvalidPsw script exection starts at Tue Jan 07 10:27:55 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Invalid password, please re-enter and try again<br/>
+Error. Retry?<br/>
+userLoginWithValidUserIdInvalidPsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registerWithStrongPsw()'><b>registerWithStrongPsw</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1916561957" onClick='toggleBox("Output-1916561957", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1916561957" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1916561957">
+registerWithStrongPsw script exection starts at Tue Jan 07 12:30:19 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9011593438<br/>
+proceed with continue button<br/>
+Entered full name: Michael Smith<br/>
+Entered password : zz1OeU5V<br/>
+Confirmed password - 'zz1OeU5V'<br/>
+Continue button clicked.<br/>
+Toast message: Sign Up Successful. 
+Your account will be verified later.<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+after registeration user details is present <br/>
+Clicked 'edit profile icon'.<br/>
+register and verification successffuly <br/>
+registerWithStrongPsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>397</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.mapplsPinBackButton()'><b>mapplsPinBackButton</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-486738330" onClick='toggleBox("Output-486738330", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-486738330" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-486738330">
+mapplsPinBackButton script exection starts at Tue Jan 07 12:56:26 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 5<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 8<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+Clicked on the close icon.<br/>
+click search box for generated pin verification<br/>
+entered pin on the search input field for pin verification : vwfrbr<br/>
+suggestions list found <br/>
+address matched by mappls pin : Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+mapplsPinBackButton script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>67</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLohinWithInvalidPsw()'><b>userLohinWithInvalidPsw</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1358917731" onClick='toggleBox("Output-1358917731", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1358917731" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1358917731">
+userLohinWithInvalidPsw script exection starts at Tue Jan 07 10:26:29 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+userLohinWithInvalidPsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.postShareAndClose()'><b>postShareAndClose</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-1311325237" onClick='toggleBox("Output-1311325237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1311325237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1311325237">
+postShareAndClose script exection starts at Tue Jan 07 11:22:08 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'post on map' <br/>
+clicked 'an Update' <br/>
+clicked 'Post Location' <br/>
+clicked 'Location Done Button' <br/>
+clicked 'Post Buton' <br/>
+clicked 'share location Button' <br/>
+Toast message: Copied<br/>
+close icon display<br/>
+Posted page closed <br/>
+postShareAndClose script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>60</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__013_MapDisplay.isMapplsLogoVisible()'><b>isMapplsLogoVisible</b><br>Test class: tests.TC__013_MapDisplay<br/>
+<a href="#Output-1254481112" onClick='toggleBox("Output-1254481112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1254481112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1254481112">
+isMapplsLogoVisible script exection starts at Tue Jan 07 12:58:37 IST 2025<br/>
+Mappls logo image is display<br/>
+isMapplsLogoVisible script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>tests.TC__013_MapDisplay@3e78b6a5</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.setWorkWithOutLogin()'><b>setWorkWithOutLogin</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-1301179818" onClick='toggleBox("Output-1301179818", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1301179818" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1301179818">
+setWorkWithOutLogin script exection starts at Tue Jan 07 12:06:51 IST 2025<br/>
+clicked 'Set Work' <br/>
+'post an Issue' login pop up window visible<br/>
+cancel login clicked<br/>
+setWorkWithOutLogin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>191</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.postMapAndViewPostedEvntVerification()'><b>postMapAndViewPostedEvntVerification</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-368375378" onClick='toggleBox("Output-368375378", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-368375378" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-368375378">
+postMapAndViewPostedEvntVerification script exection starts at Tue Jan 07 12:11:20 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 8887776565<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'post on map' <br/>
+post page visible<br/>
+clicked 'Post Location' <br/>
+clicked 'Location Done Button' <br/>
+post nutton clicked<br/>
+post has been submitted successfuly<br/>
+close button clicked<br/>
+filter clicked<br/>
+sort clicked<br/>
+'newest' clicked<br/>
+post viewed<br/>
+postMapAndViewPostedEvntVerification script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>50</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__002_Login.guestUserHMLoginTxtMobile()'><b>guestUserHMLoginTxtMobile</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1237856866" onClick='toggleBox("Output-1237856866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1237856866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1237856866">
+guestUserHMLoginTxtMobile script exection starts at Tue Jan 07 10:26:51 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+Clicked 'Skip Button'<br/>
+Login skip button working<br/>
+Home Page display<br/>
+Clicked 'Hamburger Icon'<br/>
+Login text is visible<br/>
+guestUserHMLoginTxtMobile script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.fixMapWithOutLogin()'><b>fixMapWithOutLogin</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-753955802" onClick='toggleBox("Output-753955802", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-753955802" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-753955802">
+fixMapWithOutLogin script exection starts at Tue Jan 07 11:56:57 IST 2025<br/>
+clicked 'Fix Map' <br/>
+clicked 'Select category map' <br/>
+clicked 'Post Location' <br/>
+clicked 'search icon' <br/>
+Entered Location in 'search input' <br/>
+clicked 'Location Done Button' <br/>
+clicked 'Post Buton' <br/>
+'post an Issue' login pop up window visible<br/>
+Fix Map redirected after clicked cancel login<br/>
+fixMapWithOutLogin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__018_GetMapplPin.isVideoPlayINYoutube()'><b>isVideoPlayINYoutube</b><br>Test class: tests.TC__018_GetMapplPin<br/>
+<a href="#Output-559418610" onClick='toggleBox("Output-559418610", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-559418610" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-559418610">
+isVideoPlayINYoutube script exection starts at Tue Jan 07 13:01:54 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked on the 'Get Mappls Pin' on Hamburger menu.<br/>
+mappls pin video is playing in youtube<br/>
+isVideoPlayINYoutube script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>12</td>
+<td>tests.TC__018_GetMapplPin@769a1df5</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.verifySharingPin()'><b>verifySharingPin</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-256477925" onClick='toggleBox("Output-256477925", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-256477925" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-256477925">
+verifySharingPin script exection starts at Tue Jan 07 12:53:50 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 11<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+Spread The Accomplishment is present<br/>
+facebook option is available<br/>
+twitter option is available<br/>
+instagram option is available<br/>
+more option is available<br/>
+gmail share is available<br/>
+From account name : nidhi@mapmyindia.com<br/>
+facebook option is available<br/>
+mappls pin created successfully<br/>
+mappls copy icon available<br/>
+mappls QR image icon available<br/>
+download icon available<br/>
+Close icon available<br/>
+'Mappls Pin for your added place is' available<br/>
+Get Another Mappls Pin button is available<br/>
+Feel free to share this with friends and co-workers \n Learn more about Mappls Pin<br/>
+verifySharingPin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>72</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithNumber()'><b>userLoginWithNumber</b><br>Test class: tests.TC__002_Login<br>Parameters: 9835980977, Mvn@1234, number<br/>
+<a href="#Output-1002146838" onClick='toggleBox("Output-1002146838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1002146838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1002146838">
+userLoginWithNumber script exection starts at Tue Jan 07 10:25:05 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Clicked 'edit profile icon'.<br/>
+Login and verification successfully <br/>
+userLoginWithNumber script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.fixMapWithLogin()'><b>fixMapWithLogin</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-744077812" onClick='toggleBox("Output-744077812", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-744077812" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-744077812">
+fixMapWithLogin script exection starts at Tue Jan 07 11:43:40 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'Fix Map' <br/>
+clicked 'Select category map' <br/>
+clicked 'Post Location' <br/>
+clicked 'search icon' <br/>
+Entered Location in 'search input' <br/>
+clicked 'Location Done Button' <br/>
+clicked 'Post Buton' <br/>
+clicked 'share location Button' <br/>
+Toast message: Copied<br/>
+clicked 'view post Button' <br/>
+Data posted successfully : moments ago<br/>
+fixMapWithLogin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>787</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.newRegisterWithInvalidUserId()'><b>newRegisterWithInvalidUserId</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1044472558" onClick='toggleBox("Output-1044472558", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1044472558" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1044472558">
+newRegisterWithInvalidUserId script exection starts at Tue Jan 07 12:46:37 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : #@18900<br/>
+proceed with continue button<br/>
+please enter a valid number or email for new account creation<br/>
+newRegisterWithInvalidUserId script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.unitFeature()'><b>unitFeature</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-1934714849" onClick='toggleBox("Output-1934714849", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1934714849" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1934714849">
+unitFeature script exection starts at Tue Jan 07 10:44:11 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'settings'<br/>
+unit page redirected<br/>
+km/Hr is selected by default<br/>
+home search click<br/>
+home search input : Ranchi<br/>
+place detail page redirected<br/>
+km is present<br/>
+km is present<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'settings'<br/>
+ml/Hr is not selected by default<br/>
+ml/Hr is selected<br/>
+home search click<br/>
+home search input : Ranchi<br/>
+place detail page redirected<br/>
+mi is present<br/>
+mi is present<br/>
+unitFeature script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>479</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registerWithlessThanThreeCharacterName()'><b>registerWithlessThanThreeCharacterName</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-850515329" onClick='toggleBox("Output-850515329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-850515329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-850515329">
+registerWithlessThanThreeCharacterName script exection starts at Tue Jan 07 12:26:56 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9090787883<br/>
+proceed with continue button<br/>
+Entered full name: mn<br/>
+Name should be of at least 3 characters<br/>
+registerWithlessThanThreeCharacterName script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>193</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.homeOption()'><b>homeOption</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-1784116580" onClick='toggleBox("Output-1784116580", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1784116580" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1784116580">
+homeOption script exection starts at Tue Jan 07 11:16:34 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+home address deleted<br/>
+homeOption script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>49</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registerWithNewMobileNummber()'><b>registerWithNewMobileNummber</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-48463056" onClick='toggleBox("Output-48463056", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-48463056" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-48463056">
+registerWithNewMobileNummber script exection starts at Tue Jan 07 12:39:03 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9891006887<br/>
+proceed with continue button<br/>
+Entered full name: Olivia Smith<br/>
+Entered password : M(io7%7X<br/>
+Confirmed password - 'M(io7%7X'<br/>
+Continue button clicked.<br/>
+Toast message: Sign Up Successful. 
+Your account will be verified later.<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+after registeration user details is present <br/>
+Clicked 'edit profile icon'.<br/>
+register and verification successffuly <br/>
+registerWithNewMobileNummber script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>398</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.getMapplsPinButtonWL()'><b>getMapplsPinButtonWL</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-1241501899" onClick='toggleBox("Output-1241501899", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1241501899" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1241501899">
+getMapplsPinButtonWL script exection starts at Tue Jan 07 12:10:13 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Get mappls pin option visible in quick access menu<br/>
+getMapplsPinButtonWL script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.verifyLoginAndRegisterFlow()'><b>verifyLoginAndRegisterFlow</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-406500367" onClick='toggleBox("Output-406500367", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-406500367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-406500367">
+verifyLoginAndRegisterFlow script exection starts at Tue Jan 07 12:12:41 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9934450244<br/>
+proceed with new mobile number<br/>
+registration page is diplayed<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Skip button clicked<br/>
+enter user name : nidhi1234<br/>
+Proceed with existing user id <br/>
+Enter password to Login text is display <br/>
+verifyLoginAndRegisterFlow script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>111</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__002_Login.guestUserHMLoginTxt()'><b>guestUserHMLoginTxt</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-347354124" onClick='toggleBox("Output-347354124", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-347354124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-347354124">
+guestUserHMLoginTxt script exection starts at Tue Jan 07 10:24:39 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi@mapmyindia.com<br/>
+Clicked 'Skip Button'<br/>
+Login skip button working<br/>
+Home Page display<br/>
+Clicked 'Hamburger Icon'<br/>
+Login text is visible<br/>
+guestUserHMLoginTxt script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.reportIssueAndContributionVerification()'><b>reportIssueAndContributionVerification</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-472146846" onClick='toggleBox("Output-472146846", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-472146846" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472146846">
+reportIssueAndContributionVerification script exection starts at Tue Jan 07 10:57:13 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'Fix Map' <br/>
+clicked 'Select category map' <br/>
+Add Image clicked<br/>
+Mappls Camera is visible<br/>
+Image uploaded successfully.<br/>
+clicked 'Post Location' <br/>
+clicked 'search icon' <br/>
+Entered Location in 'search input' <br/>
+clicked 'Location Done Button' <br/>
+clicked 'Post Buton' <br/>
+cancel login clicked<br/>
+home page redirected<br/>
+Clicked 'Hamburger Icon'<br/>
+contribution present in my saves list<br/>
+map issue present<br/>
+Data posted successfully : moments ago<br/>
+reportIssueAndContributionVerification script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>120</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.useMapGuestUser()'><b>useMapGuestUser</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1095511180" onClick='toggleBox("Output-1095511180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1095511180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1095511180">
+useMapGuestUser script exection starts at Tue Jan 07 12:37:06 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9934450244<br/>
+proceed with new mobile number<br/>
+registration page is diplayed<br/>
+guest user verified<br/>
+useMapGuestUser script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>106</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.locationOptionMainScreen()'><b>locationOptionMainScreen</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-67025210" onClick='toggleBox("Output-67025210", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-67025210" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-67025210">
+locationOptionMainScreen script exection starts at Tue Jan 07 10:59:23 IST 2025<br/>
+share my location is visible in quick access menu<br/>
+locationOptionMainScreen script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.postWithLoginAndLocation()'><b>postWithLoginAndLocation</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-791091938" onClick='toggleBox("Output-791091938", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-791091938" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-791091938">
+postWithLoginAndLocation script exection starts at Tue Jan 07 11:20:55 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'post on map' <br/>
+clicked 'an Update' <br/>
+clicked 'Post Location' <br/>
+clicked 'Location Done Button' <br/>
+Add Image clicked<br/>
+Mappls Camera is visible<br/>
+Image uploaded successfully.<br/>
+clicked 'Post Buton' <br/>
+clicked 'view post Button' <br/>
+Data posted successfully : moments ago<br/>
+postWithLoginAndLocation script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>63</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.newRegisterWithEmptyFields()'><b>newRegisterWithEmptyFields</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-2042684293" onClick='toggleBox("Output-2042684293", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2042684293" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2042684293">
+newRegisterWithEmptyFields script exection starts at Tue Jan 07 12:25:51 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9255865144<br/>
+proceed with continue button<br/>
+user is not able to register with empty field<br/>
+newRegisterWithEmptyFields script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.mapplsPinHomePage()'><b>mapplsPinHomePage</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-1132146097" onClick='toggleBox("Output-1132146097", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1132146097" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1132146097">
+mapplsPinHomePage script exection starts at Tue Jan 07 12:47:00 IST 2025<br/>
+Mappls pin visible on home page<br/>
+mapplsPinHomePage script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.shareMapplsPin()'><b>shareMapplsPin</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-700166768" onClick='toggleBox("Output-700166768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-700166768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-700166768">
+shareMapplsPin script exection starts at Tue Jan 07 12:51:54 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 5<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 3 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+mappls pin share button clicked succesfuly<br/>
+shareMapplsPin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>41</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__018_GetMapplPin.isMapplsPinButtonVisible()'><b>isMapplsPinButtonVisible</b><br>Test class: tests.TC__018_GetMapplPin<br/>
+<a href="#Output-1463924746" onClick='toggleBox("Output-1463924746", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1463924746" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1463924746">
+isMapplsPinButtonVisible script exection starts at Tue Jan 07 13:02:16 IST 2025<br/>
+Mappls pin clickable<br/>
+Show Mappls Pin is available<br/>
+'Create Mappls Pin' is available<br/>
+isMapplsPinButtonVisible script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>9</td>
+<td>tests.TC__018_GetMapplPin@769a1df5</td></tr>
+<tr>
+<td title='tests.TC__013_MapDisplay.hybridSatellite()'><b>hybridSatellite</b><br>Test class: tests.TC__013_MapDisplay<br/>
+<a href="#Output-124718754" onClick='toggleBox("Output-124718754", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-124718754" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-124718754">
+hybridSatellite script exection starts at Tue Jan 07 12:58:54 IST 2025<br/>
+Map Layer Icon  click<br/>
+hybridSatellite script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>14</td>
+<td>tests.TC__013_MapDisplay@3e78b6a5</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithEmail()'><b>userLoginWithEmail</b><br>Test class: tests.TC__002_Login<br>Parameters: nidhi@mapmyindia.com, Mvn@1234, email<br/>
+<a href="#Output-955875766" onClick='toggleBox("Output-955875766", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-955875766" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-955875766">
+userLoginWithEmail script exection starts at Tue Jan 07 10:23:13 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Clicked 'edit profile icon'.<br/>
+Login and verification successfully <br/>
+userLoginWithEmail script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>25</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.sttngsLogout()'><b>sttngsLogout</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-2110335494" onClick='toggleBox("Output-2110335494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2110335494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110335494">
+sttngsLogout script exection starts at Tue Jan 07 10:39:05 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+clicked 'settings' on hamburger menu<br/>
+Clicked 'account'<br/>
+Clicked 'log out'<br/>
+Clicked 'Yes'<br/>
+Clicked 'Hamburger Icon'<br/>
+Logout successfully<br/>
+home page redirected<br/>
+Clicked 'Hamburger Icon'<br/>
+guest account<br/>
+sttngsLogout script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>297</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginValidNumberInvalidPsw()'><b>userLoginValidNumberInvalidPsw</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1681838063" onClick='toggleBox("Output-1681838063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1681838063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1681838063">
+userLoginValidNumberInvalidPsw script exection starts at Tue Jan 07 10:25:39 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Invalid password, please re-enter and try again<br/>
+Error. Retry?<br/>
+userLoginValidNumberInvalidPsw script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithInvalidMobile()'><b>userLoginWithInvalidMobile</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-747258971" onClick='toggleBox("Output-747258971", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747258971" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747258971">
+userLoginWithInvalidMobile script exection starts at Tue Jan 07 10:26:06 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+userLoginWithInvalidMobile script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registrationWithExistingEmail()'><b>registrationWithExistingEmail</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-489693281" onClick='toggleBox("Output-489693281", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-489693281" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-489693281">
+registrationWithExistingEmail script exection starts at Tue Jan 07 12:16:14 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi@mapmyindia.com<br/>
+proceed with new existing email id <br/>
+Enter password to Login text is display <br/>
+registrationWithExistingEmail script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__013_MapDisplay.homeScreen()'><b>homeScreen</b><br>Test class: tests.TC__013_MapDisplay<br/>
+<a href="#Output-562535382" onClick='toggleBox("Output-562535382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-562535382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-562535382">
+homeScreen script exection starts at Tue Jan 07 12:59:40 IST 2025<br/>
+direction page redirected and Your current location is present by default<br/>
+Home option is available<br/>
+work option is available<br/>
+homeScreen script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>tests.TC__013_MapDisplay@3e78b6a5</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.welcomPageRegster()'><b>welcomPageRegster</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1170137069" onClick='toggleBox("Output-1170137069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1170137069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1170137069">
+welcomPageRegster script exection starts at Tue Jan 07 12:12:20 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Welcome text is visible<br/>
+'Login/Sign Up to manage your account' text is visible<br/>
+Skip button is visible<br/>
+'Email/Phone Number/ Username' text is visible in input field<br/>
+Continue button is present<br/>
+welcomPageRegster script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithInvalidMail()'><b>userLoginWithInvalidMail</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1563766240" onClick='toggleBox("Output-1563766240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1563766240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1563766240">
+userLoginWithInvalidMail script exection starts at Tue Jan 07 10:23:48 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+userLoginWithInvalidMail script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.verifyAnotherMapplsPin()'><b>verifyAnotherMapplsPin</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-2099894524" onClick='toggleBox("Output-2099894524", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2099894524" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2099894524">
+verifyAnotherMapplsPin script exection starts at Tue Jan 07 12:55:11 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 1<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 3<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+Clicked on the close icon.<br/>
+click search box for generated pin verification<br/>
+entered pin on the search input field for pin verification : vcchq3<br/>
+suggestions list found <br/>
+address matched by mappls pin : Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 4 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+verifyAnotherMapplsPin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>65</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.quickAccessUIVerification()'><b>quickAccessUIVerification</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-500622336" onClick='toggleBox("Output-500622336", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-500622336" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-500622336">
+quickAccessUIVerification script exection starts at Tue Jan 07 10:56:16 IST 2025<br/>
+post on map visible<br/>
+fix map is visible<br/>
+view posted events is visible<br/>
+share location is visible<br/>
+get mappls pin is visible<br/>
+home is visible<br/>
+work isvisible<br/>
+quickAccessUIVerification script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.settingsUI()'><b>settingsUI</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-232681351" onClick='toggleBox("Output-232681351", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-232681351" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-232681351">
+settingsUI script exection starts at Tue Jan 07 10:28:21 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+settings option available in hambrger menu<br/>
+Clicked 'settings'<br/>
+settings page redirected<br/>
+general setting option available<br/>
+Map Settings option available<br/>
+Units option available<br/>
+Navigation Settings option available<br/>
+settingsUI script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>166</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.mapplsPinBtnWL()'><b>mapplsPinBtnWL</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-183146160" onClick='toggleBox("Output-183146160", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-183146160" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-183146160">
+mapplsPinBtnWL script exection starts at Tue Jan 07 12:50:27 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+mapplsPinBtnWL script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__018_GetMapplPin.mapplsPinUIVerification()'><b>mapplsPinUIVerification</b><br>Test class: tests.TC__018_GetMapplPin<br/>
+<a href="#Output-1868932153" onClick='toggleBox("Output-1868932153", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1868932153" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1868932153">
+mapplsPinUIVerification script exection starts at Tue Jan 07 12:59:59 IST 2025<br/>
+mappls pin icon is visible in home screen<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked on the 'Get Mappls Pin' on Hamburger menu.<br/>
+mappls pin top nav is visible with text 'what is mappls pin?'<br/>
+mappls pin back button is visible<br/>
+mappls pin video is playing in youtube<br/>
+mapplsPinUIVerification script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>105</td>
+<td>tests.TC__018_GetMapplPin@769a1df5</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registrationWithNewEmail()'><b>registrationWithNewEmail</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1864309373" onClick='toggleBox("Output-1864309373", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1864309373" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1864309373">
+registrationWithNewEmail script exection starts at Tue Jan 07 12:14:42 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 43212nidhikumari@gmail.com<br/>
+proceed with new new email id <br/>
+registration page is diplayed<br/>
+registrationWithNewEmail script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>82</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.registerWithInvalidNumber()'><b>registerWithInvalidNumber</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-699120201" onClick='toggleBox("Output-699120201", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-699120201" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-699120201">
+registerWithInvalidNumber script exection starts at Tue Jan 07 12:46:14 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 98764539879<br/>
+proceed with continue button<br/>
+please enter a valid number<br/>
+registerWithInvalidNumber script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.showMapplsPin()'><b>showMapplsPin</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-1706336466" onClick='toggleBox("Output-1706336466", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1706336466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1706336466">
+showMapplsPin script exection starts at Tue Jan 07 12:47:53 IST 2025<br/>
+Mappls pin clickable<br/>
+Near by place available<br/>
+showMapplsPin script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.postShareAndHelpful()'><b>postShareAndHelpful</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-31436215" onClick='toggleBox("Output-31436215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-31436215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-31436215">
+postShareAndHelpful script exection starts at Tue Jan 07 11:24:30 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'post on map' <br/>
+clicked 'an Update' <br/>
+clicked 'Post Location' <br/>
+clicked 'Location Done Button' <br/>
+Add Image clicked<br/>
+Mappls Camera is visible<br/>
+Image uploaded successfully.<br/>
+clicked 'Post Buton' <br/>
+clicked 'view post Button' <br/>
+Toast message: Copied<br/>
+clicked 'Helpful Button'<br/>
+get 'Helpful Like Button' count : 1<br/>
+postShareAndHelpful script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>1139</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.spreadAccomplishmentMaileShare()'><b>spreadAccomplishmentMaileShare</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-1219992543" onClick='toggleBox("Output-1219992543", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1219992543" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1219992543">
+spreadAccomplishmentMaileShare script exection starts at Tue Jan 07 12:52:45 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Mappls pin clickable<br/>
+Create Mappls Pin page is visible<br/>
+Category field available<br/>
+address field available<br/>
+click category drop-down<br/>
+Clicked on random category selection.  - 3<br/>
+name field available<br/>
+click sub-category drop-down<br/>
+click mark location on map<br/>
+click mark location done button <br/>
+Toast message: Trying to fetch your location. Please wait.<br/>
+click mark location done button <br/>
+Got the address: Namkum Industrial Area, Samlong, Ranchi, Jharkhand. 3 m from Sologix Energy Pvt Ltd, Pin-834001 (India)<br/>
+Clicked on the input field for the place name and enter name : 'Testing purpose'<br/>
+Clicked on the 'Submit' button.<br/>
+Spread The Accomplishment is present<br/>
+facebook option is available<br/>
+twitter option is available<br/>
+instagram option is available<br/>
+more option is available<br/>
+gmail share is available<br/>
+From account name : nidhi@mapmyindia.com<br/>
+mail sent<br/>
+spreadAccomplishmentMaileShare script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>54</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__013_MapDisplay.isMySaveBtnPresent()'><b>isMySaveBtnPresent</b><br>Test class: tests.TC__013_MapDisplay<br/>
+<a href="#Output-303218042" onClick='toggleBox("Output-303218042", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-303218042" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-303218042">
+isMySaveBtnPresent script exection starts at Tue Jan 07 12:59:18 IST 2025<br/>
+Home, Work, My Saves, My Gadgets etc is available<br/>
+My Layers is present<br/>
+my saves is present<br/>
+my saves toggle is present<br/>
+isMySaveBtnPresent script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__013_MapDisplay@3e78b6a5</td></tr>
+<tr>
+<td title='tests.TC__002_Login.verifyLoginAndRegister()'><b>verifyLoginAndRegister</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-793808700" onClick='toggleBox("Output-793808700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-793808700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-793808700">
+verifyLoginAndRegister script exection starts at Tue Jan 07 10:21:04 IST 2025<br/>
+Clicked 'login' in hamburger menu<br/>
+login verified <br/>
+enter user name : nidhi1234<br/>
+password field visible<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9932455607<br/>
+register page verified<br/>
+verifyLoginAndRegister script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>91</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.newRegisterWithUserId()'><b>newRegisterWithUserId</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-390113200" onClick='toggleBox("Output-390113200", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-390113200" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-390113200">
+newRegisterWithUserId script exection starts at Tue Jan 07 12:16:39 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9612614533<br/>
+proceed with continue button<br/>
+Entered full name: ni<br/>
+user is not able to register with 2 character<br/>
+Entered full name: nid<br/>
+user is able to register with 3 character<br/>
+newRegisterWithUserId script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>300</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__026_MapplsPinHome.isMapplsBtnClickableWOL()'><b>isMapplsBtnClickableWOL</b><br>Test class: tests.TC__026_MapplsPinHome<br/>
+<a href="#Output-329088237" onClick='toggleBox("Output-329088237", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-329088237" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-329088237">
+isMapplsBtnClickableWOL script exection starts at Tue Jan 07 12:49:57 IST 2025<br/>
+Mappls pin clickable<br/>
+create mappls pin button is clickable<br/>
+Login to access this functionality.<br/>
+login pop up window cancel button clicked<br/>
+Login/Sign Up to manage your account <br/>
+enter user name : 9835980977<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+create mappls pin button is present after login<br/>
+isMapplsBtnClickableWOL script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>tests.TC__026_MapplsPinHome@7068e664</td></tr>
+<tr>
+<td title='tests.TC__002_Login.loginUICheck()'><b>loginUICheck</b><br>Test class: tests.TC__002_Login<br/>
+<a href="#Output-1403815002" onClick='toggleBox("Output-1403815002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1403815002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1403815002">
+loginUICheck script exection starts at Tue Jan 07 10:20:40 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Welcome text is visible<br/>
+'Login/Sign Up to manage your account' text is visible<br/>
+Skip button is visible<br/>
+'Email/Phone Number/ Username' text is visible in input field<br/>
+Continue button is present<br/>
+loginUICheck script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.getMapplsPinButtonWOL()'><b>getMapplsPinButtonWOL</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-836252974" onClick='toggleBox("Output-836252974", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-836252974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-836252974">
+getMapplsPinButtonWOL script exection starts at Tue Jan 07 10:59:42 IST 2025<br/>
+Get mappls pin option visible in quick access menu<br/>
+getMapplsPinButtonWOL script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>35</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.postAndContinue()'><b>postAndContinue</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-475794730" onClick='toggleBox("Output-475794730", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-475794730" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-475794730">
+postAndContinue script exection starts at Tue Jan 07 11:23:18 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+clicked 'post on map' <br/>
+clicked 'an Update' <br/>
+clicked 'Post Location' <br/>
+clicked 'Location Done Button' <br/>
+clicked 'Post Buton' <br/>
+Posted page closed <br/>
+postAndContinue script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>62</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+<tr>
+<td title='tests.TC__002_Login.userLoginWithUserId()'><b>userLoginWithUserId</b><br>Test class: tests.TC__002_Login<br>Parameters: nidhi1234, Mvn@1234, name<br/>
+<a href="#Output-696411130" onClick='toggleBox("Output-696411130", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-696411130" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-696411130">
+userLoginWithUserId script exection starts at Tue Jan 07 10:27:20 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+Clicked 'edit profile icon'.<br/>
+Login and verification successfully <br/>
+userLoginWithUserId script is passed<br/>
+</div>
+</td>
+<td></td>
+<td>24</td>
+<td>tests.TC__002_Login@2254127a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TC__001_Rgisteration.newRegisterWithEmptyFields()'><b>newRegisterWithEmptyFields</b><br>Test class: tests.TC__001_Rgisteration<br/>
+<a href="#Output-1942464295" onClick='toggleBox("Output-1942464295", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1942464295" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1942464295">
+newRegisterWithEmptyFields script exection starts at Tue Jan 07 12:21:48 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : 9595499888<br/>
+proceed with continue button<br/>
+newRegisterWithEmptyFields script is skipped<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: a2bffbab-17ce-479f-9074-c2e6e0729152
+*** Element info: {Using=xpath, value=//android.widget.TextView[@resource-id=&quot;com.mmi.maps:id/buttonContinueText&quot;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.mappls.map.features.TC__001_RegistrationFeature.registerWithEmptyFieldMsgWithEnterName(TC__001_RegistrationFeature.java:503)
+	at tests.TC__001_Rgisteration.newRegisterWithEmptyFields(TC__001_Rgisteration.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1942464295", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1942464295'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: a2bffbab-17ce-479f-9074-c2e6e0729152
+*** Element info: {Using=xpath, value=//android.widget.TextView[@resource-id=&quot;com.mmi.maps:id/buttonContinueText&quot;]}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.mappls.map.features.TC__001_RegistrationFeature.registerWithEmptyFieldMsgWithEnterName(TC__001_RegistrationFeature.java:503)
+	at tests.TC__001_Rgisteration.newRegisterWithEmptyFields(TC__001_Rgisteration.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>230</td>
+<td>tests.TC__001_Rgisteration@1a5a4e19</td></tr>
+<tr>
+<td title='tests.TC__011_Settings.settingWithLoginSkipBTN()'><b>settingWithLoginSkipBTN</b><br>Test class: tests.TC__011_Settings<br/>
+<a href="#Output-1092894913" onClick='toggleBox("Output-1092894913", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1092894913" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1092894913">
+settingWithLoginSkipBTN script exection starts at Tue Jan 07 10:52:21 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+settingWithLoginSkipBTN script is skipped<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: (//android.widget.Toast)[1]&apos; does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 04022047-73cf-4886-b87e-b3374a2f5622
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+	at com.mappls.map.features.BaseFeatures.toastMsg(BaseFeatures.java:426)
+	at com.mappls.map.features.BaseFeatures.simpleHamburgerLogin(BaseFeatures.java:471)
+	at com.mappls.map.features.TC__011_SettingsFeature.withLoginSettingsSkipBtn(TC__011_SettingsFeature.java:365)
+	at tests.TC__011_Settings.settingWithLoginSkipBTN(TC__011_Settings.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1092894913", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1092894913'><pre>org.openqa.selenium.StaleElementReferenceException: The element &apos;By.xpath: (//android.widget.Toast)[1]&apos; does not exist in DOM anymore
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: 04022047-73cf-4886-b87e-b3374a2f5622
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.getAttribute(RemoteWebElement.java:134)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getAttribute(Unknown Source)
+	at com.mappls.map.features.BaseFeatures.toastMsg(BaseFeatures.java:426)
+	at com.mappls.map.features.BaseFeatures.simpleHamburgerLogin(BaseFeatures.java:471)
+	at com.mappls.map.features.TC__011_SettingsFeature.withLoginSettingsSkipBtn(TC__011_SettingsFeature.java:365)
+	at tests.TC__011_Settings.settingWithLoginSkipBTN(TC__011_Settings.java:21)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>19</td>
+<td>tests.TC__011_Settings@461ad730</td></tr>
+<tr>
+<td title='tests.TC__012_QuickAccessMenu.homeOption()'><b>homeOption</b><br>Test class: tests.TC__012_QuickAccessMenu<br/>
+<a href="#Output-641306471" onClick='toggleBox("Output-641306471", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-641306471" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-641306471">
+homeOption script exection starts at Tue Jan 07 11:00:26 IST 2025<br/>
+Clicked 'Hamburger Icon'<br/>
+Clicked 'login' in hamburger menu<br/>
+enter user name : nidhi1234<br/>
+enter password name : Mvn@1234<br/>
+proceed with login button<br/>
+Toast message: Login Successful<br/>
+Clicked 'Hamburger Icon'<br/>
+homeOption script is skipped<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: f8ba837b-b41d-49a5-9f28-5ecb85f7bc64
+*** Element info: {Using=id, value=com.mmi.maps:id/bottom_sheet_quick_access_home_duration}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.qcHomeAddressVerification(TC__012_QuickAccessMenuFeature.java:1073)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.setHomeAddressWithLogin(TC__012_QuickAccessMenuFeature.java:1083)
+	at tests.TC__012_QuickAccessMenu.homeOption(TC__012_QuickAccessMenu.java:96)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace641306471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace641306471'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: &apos;POST /element&apos; cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;NIDHI&apos;, ip: &apos;192.168.1.100&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, databaseEnabled: false, desired: {appActivity: com.mmi.maps.ui.activities...., appPackage: com.mmi.maps, automationName: uiautomator2, deviceName: realme C11 2021, platformName: android, platformVersion: 14, udid: 0002203R600009E8}, deviceApiLevel: 30, deviceManufacturer: realme, deviceModel: RMX3231, deviceName: 0002203R600009E8, deviceScreenDensity: 320, deviceScreenSize: 720x1600, deviceUDID: 0002203R600009E8, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 64, takesScreenshot: true, udid: 0002203R600009E8, viewportRect: {height: 1536, left: 0, top: 64, width: 720}, warnings: {}, webStorageEnabled: false}
+Session ID: f8ba837b-b41d-49a5-9f28-5ecb85f7bc64
+*** Element info: {Using=id, value=com.mmi.maps:id/bottom_sheet_quick_access_home_duration}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.qcHomeAddressVerification(TC__012_QuickAccessMenuFeature.java:1073)
+	at com.mappls.map.features.TC__012_QuickAccessMenuFeature.setHomeAddressWithLogin(TC__012_QuickAccessMenuFeature.java:1083)
+	at tests.TC__012_QuickAccessMenu.homeOption(TC__012_QuickAccessMenu.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>954</td>
+<td>tests.TC__012_QuickAccessMenu@4ee203eb</td></tr>
+</table><p>
+</body>
+</html>

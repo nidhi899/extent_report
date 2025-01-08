@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.mappls.map.utils.MyTestListeners" />
+		<listener
+			class-name="com.mappls.map.utils.ExtentTestNGIReporterListener" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="tests.TC__002_Login" />
+			<class name="tests.TC__011_Settings" />
+			<class name="tests.TC__012_QuickAccessMenu" />
+			<class name="tests.TC__001_Rgisteration" />
+			<class name="tests.TC__026_MapplsPinHome" />
+			<class name="tests.TC__013_MapDisplay" />
+			<class name="tests.TC__018_GetMapplPin" />
+			<class name="tests.TC__003_ForgotPsw" />
+			<class name="tests.TC__010_AddPlaces" />
+			<class name="tests.TC__021_PointOnMap" />
+			<class name="tests.TC__020_MapLayer" />
+			<class name="tests.TC__023_WhatAndWhere" />
+			<class name="tests.TC__024_EarthObsData" />
+			<class name="tests.TC__014_HomeScreen" />
+			<class name="tests.TC__008_MySaves" />
+			
+			
+			
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
