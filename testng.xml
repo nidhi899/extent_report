@@ -1,56 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Parallel Test Suite" parallel="tests" thread-count="2">
 
 
+	<listeners>
+		<listener class-name="com.mappls.map.utils.MyTestListeners" />
+		<listener
+			class-name="com.mappls.map.utils.ExtentTestNGIReporterListener" />
+	</listeners>
+
+
+	<test thread-count="5" name="Device2Tests">
+		<parameter name="udid" value="R9ZR80ASBLV" />
+		<parameter name="platformVersion" value="12" />
+		<parameter name="deviceName" value="SM-A037F"></parameter>
+
+		<classes>
+			<class name="tests.TC__001_Rgisteration" />
+			<class name="tests.TC__002_Login" />
+			
+			<class name="tests.TC__008_MySaves" />
+			<class name="tests.TC__011_Settings" />
+			<class name="tests.TC__010_AddPlaces" />
+			
+			<class name="tests.TC__013_MapDisplay" />
+			<class name="tests.TC__014_HomeScreen" />
+			<class name="tests.TC__018_GetMapplPin" />
+			<class name="tests.TC__020_MapLayer" />
+			<class name="tests.TC__023_WhatAndWhere" />
+			<class name="tests.TC__024_EarthObsData" />
+			<class name="tests.TC__026_MapplsPinHome" />
+			<class name="tests.TC__021_PointOnMap" />
+
+			<!--
+				<class name="tests.TC__012_QuickAccessMenu" />
+				<class name="tests.TC__003_ForgotPsw" />
+			 -->
+
+			<class name="tests.TC__005_Location" />
+			<class name="tests.TC__004_SkipLogin" />
+			<class name="tests.TC__006_CameraOff" />
+			<class name="tests.TC__007_MyWorldView" />
+			<class name="tests.TC__015_Search" />
+			<class name="tests.TC__017_Navigation" />
+			<class name="tests.TC__019_UserProfile" />
+			<class name="tests.TC__022_CurrentLocation" />
+			<class name="tests.TC__025_RealView" />
+			<class name="tests.TC__016_PlaceDetail" />
+			<class name="tests.TC__009_ShareMyLocation" />
+		</classes>
+	</test>
+
+
+</suite>
+
+
+<!-- 
 <suite name="Suite">
 	<listeners>
 		<listener class-name="com.mappls.map.utils.MyTestListeners" />
 		<listener
 			class-name="com.mappls.map.utils.ExtentTestNGIReporterListener" />
 	</listeners>
-	<test thread-count="5" name="Test">
-		<classes>
-			<class name="tests.TC__008_MySaves" />
-			<class name="tests.TC__001_Rgisteration" />
-			<class name="tests.TC__011_Settings" />
-			<class name="tests.TC__010_AddPlaces" />
-			<class name="tests.TC__018_GetMapplPin" />
-			<class name="tests.TC__026_MapplsPinHome" />
-			<class name="tests.TC__002_Login" />
-			<class name="tests.TC__012_QuickAccessMenu" />
-			<class name="tests.TC__013_MapDisplay" />
-			<class name="tests.TC__003_ForgotPsw" />
-			<class name="tests.TC__021_PointOnMap" />
-			<class name="tests.TC__020_MapLayer" />
-			<class name="tests.TC__023_WhatAndWhere" />
-			<class name="tests.TC__024_EarthObsData" />
-			<class name="tests.TC__014_HomeScreen" />
-			
-			
-			
-		</classes>
-	</test>
-
-
 	<test name="Device1Tests">
 		<parameter name="udid" value="0002203R600009E8" />
 		<parameter name="platformVersion" value="14" />
+		
+		
 		<classes>
 			<class name="tests.TC__002_Login" />
-			<class name="com.mappls.map.tests.TC__008_MySaves" />
 		</classes>
 	</test>
-
-	<!-- Test cases for Device 2 -->
-	<test name="Device2Tests">
+	
+		<test name="Device2Tests">
 		<parameter name="udid" value="R9ZR80ASBLV" />
-		<parameter name="platformVersion" value="12" />
+		<parameter name="platformVersion" value="14" />
 		<classes>
-			<class name="com.mappls.map.tests.TC__008_MySaves" />
-
+			 <class name="tests.TC__015_Search"/>
 		</classes>
 	</test>
-	
-	
-</suite> <!--
-Suite -->
+</suite> -->
+
