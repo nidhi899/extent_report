@@ -18,6 +18,8 @@ public class TC__002_Login extends DriverManager {
 	TC__001_RegistrationFeature nrp;	
 
 
+	
+	//new code
 	// Verify that UI is proper in Login page
 		// UI for all screen should be properly visible and function should work
 		// properly
